@@ -1,42 +1,17 @@
-/* General */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   margin: 0;
   background: #f1f3f6;
 }
 
-/* Header (App Style) */
+/* Header */
 header {
   background: maroon;
   color: white;
   text-align: center;
   padding: 12px;
-  font-size: 18px;
   position: sticky;
   top: 0;
-}
-
-/* Bottom Navigation (App Style) */
-nav {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #fff;
-  display: flex;
-  justify-content: space-around;
-  border-top: 1px solid #ccc;
-  padding: 8px 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-size: 12px;
-  text-align: center;
-}
-
-nav a:hover {
-  color: maroon;
 }
 
 /* Filters */
@@ -45,22 +20,20 @@ nav a:hover {
   text-align: center;
 }
 
-/* Products (Card Grid like app) */
+/* Products (App Grid) */
 .products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   padding: 10px;
-  margin-bottom: 60px; /* space for bottom nav */
+  margin-bottom: 70px;
 }
 
-/* Product Card */
 .product {
   background: white;
-  border-radius: 10px;
   padding: 10px;
+  border-radius: 10px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .product img {
@@ -74,9 +47,8 @@ button {
   color: white;
   padding: 8px;
   border: none;
-  border-radius: 5px;
   width: 100%;
-  margin-top: 5px;
+  border-radius: 5px;
 }
 
 /* Gallery */
@@ -101,30 +73,34 @@ button {
   background: #fff;
 }
 
-.services h2 {
-  font-size: 18px;
-}
-
-.services li {
-  font-size: 14px;
-}
-
 /* COD */
 .cod {
   background: #ffe4b5;
   padding: 10px;
   text-align: center;
-  font-size: 14px;
 }
 
 /* Contact */
 .contact {
   padding: 15px;
   background: #fff;
-  font-size: 14px;
 }
 
-/* Footer hidden (app style doesn’t need big footer) */
-footer {
-  display: none;
+/* Bottom Nav */
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ccc;
+  padding: 8px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  text-align: center;
 }
