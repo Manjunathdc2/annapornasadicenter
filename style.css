@@ -2,168 +2,129 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f5f5f5;
+  background: #f1f3f6;
 }
 
-/* Header */
+/* Header (App Style) */
 header {
   background: maroon;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 12px;
+  font-size: 18px;
+  position: sticky;
+  top: 0;
 }
 
-/* Navigation */
+/* Bottom Navigation (App Style) */
 nav {
-  background: #333;
-  padding: 12px;
-  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ccc;
+  padding: 8px 0;
 }
 
 nav a {
-  color: white;
-  margin: 15px;
   text-decoration: none;
-  font-weight: bold;
+  color: #333;
+  font-size: 12px;
+  text-align: center;
 }
 
 nav a:hover {
-  color: #ffd700;
+  color: maroon;
 }
 
 /* Filters */
 .filters {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
-/* Products */
+/* Products (Card Grid like app) */
 .products {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 60px; /* space for bottom nav */
 }
 
 /* Product Card */
 .product {
   background: white;
-  padding: 15px;
-  border-radius: 12px;
+  border-radius: 10px;
+  padding: 10px;
   text-align: center;
-  width: 220px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.product:hover {
-  transform: scale(1.05);
-}
-
-/* Product Image */
 .product img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 /* Button */
 button {
   background: green;
   color: white;
-  padding: 10px;
+  padding: 8px;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
 }
 
-button:hover {
-  background: darkgreen;
-}
-
-/* Gallery Section */
+/* Gallery */
 .gallery {
-  text-align: center;
-  padding: 30px;
-}
-
-.gallery h2 {
-  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .gallery-container img {
-  width: 18px;
+  width: 100%;
   border-radius: 10px;
-  transition: 0.3s;
 }
 
-.gallery-container img:hover {
-  transform: scale(1.05);
-}
-
-/* Services (Blouse & Embroidery) */
+/* Services */
 .services {
-  padding: 25px;
-  background: #fff3e0;
-  text-align: center;
+  padding: 15px;
+  background: #fff;
 }
 
 .services h2 {
-  margin-bottom: 10px;
-}
-
-.services ul {
-  list-style: none;
-  padding: 0;
+  font-size: 18px;
 }
 
 .services li {
-  margin: 10px 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-/* COD Section */
+/* COD */
 .cod {
-  text-align: center;
   background: #ffe4b5;
-  padding: 20px;
-  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
 }
 
-/* Contact Section */
+/* Contact */
 .contact {
-  padding: 25px;
-  text-align: center;
-  background: #f0f0f0;
-}
-
-.contact p {
-  margin: 8px 0;
-}
-
-/* Footer */
-footer {
-  text-align: center;
   padding: 15px;
-  background: #333;
-  color: white;
+  background: #fff;
+  font-size: 14px;
 }
 
-/* Mobile Responsive */
-@media (max-width: 600px) {
-  .products {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gallery-container img {
-    width: 90%;
-  }
+/* Footer hidden (app style doesn’t need big footer) */
+footer {
+  display: none;
 }
