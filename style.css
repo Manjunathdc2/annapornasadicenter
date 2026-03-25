@@ -1,93 +1,92 @@
+/* General */
 body {
-  font-family: Arial;
   margin: 0;
+  font-family: Arial, sans-serif;
   background: #f1f3f6;
 }
 
-/* Header */
-header {
-  background: maroon;
+/* Topbar */
+.topbar {
+  background: #2874f0;
   color: white;
-  text-align: center;
-  padding: 12px;
+  padding: 10px;
   position: sticky;
   top: 0;
-}
-
-/* Filters */
-.filters {
-  padding: 10px;
   text-align: center;
 }
 
-/* Products (App Grid) */
+.topbar input {
+  width: 90%;
+  padding: 8px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Products Grid */
 .products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 8px;
   padding: 10px;
   margin-bottom: 70px;
 }
 
+/* Product Card */
 .product {
   background: white;
-  padding: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
+  padding: 8px;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .product img {
   width: 100%;
-  border-radius: 8px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Text */
+.product h4 {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
 }
 
 /* Button */
 button {
-  background: green;
+  width: 100%;
+  padding: 6px;
+  background: #fb641b;
   color: white;
-  padding: 8px;
   border: none;
-  width: 100%;
   border-radius: 5px;
-}
-
-/* Gallery */
-.gallery {
-  padding: 10px;
-}
-
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.gallery-container img {
-  width: 100%;
-  border-radius: 10px;
+  font-size: 12px;
 }
 
 /* Services */
 .services {
-  padding: 15px;
-  background: #fff;
-}
-
-/* COD */
-.cod {
-  background: #ffe4b5;
+  background: white;
   padding: 10px;
-  text-align: center;
+  margin: 10px;
+  border-radius: 8px;
 }
 
 /* Contact */
 .contact {
-  padding: 15px;
-  background: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
 }
 
-/* Bottom Nav */
-nav {
+/* Bottom Navigation */
+.bottom-nav {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -95,12 +94,12 @@ nav {
   display: flex;
   justify-content: space-around;
   border-top: 1px solid #ccc;
-  padding: 8px 0;
+  padding: 5px 0;
 }
 
-nav a {
+.bottom-nav a {
   text-decoration: none;
   color: black;
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
 }
