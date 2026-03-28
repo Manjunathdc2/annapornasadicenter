@@ -2,68 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Annapoorna Saree Center</title>
+  <title>Annapoorna Sadi Center</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- TOP BAR -->
-<header class="topbar">
-  <h2>🛍️ Annapoorna</h2>
-  <input type="text" placeholder="Search sarees...">
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2 class="logo">Annapoorna</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>ONLINE SAREE SHOPPING</h1>
+    <p>Premium Cotton & Handloom Sarees</p>
+    <button onclick="scrollToShop()">Shop Now</button>
+  </div>
+
+  <div class="hero-img">
+    <img src="C1.jpg" alt="Model">
+  </div>
+</section>
+
 <!-- PRODUCTS -->
-<section class="products">
+<section id="shop" class="products">
+  <h2>Our Sarees</h2>
 
-  <div class="product">
-    <img src="C1.jpg">
-    <h4>Cotton Saree</h4>
-    <p class="price">₹899</p>
-    <button onclick="orderNow('Cotton Saree')">Order</button>
+  <div class="product-grid">
+
+    <div class="card">
+      <img src="C1.jpg">
+      <h4>Cotton Saree</h4>
+      <p>₹899</p>
+      <button onclick="orderNow('Cotton Saree')">Order</button>
+    </div>
+
+    <div class="card">
+      <img src="C1.jpg">
+      <h4>Handloom Saree</h4>
+      <p>₹1499</p>
+      <button onclick="orderNow('Handloom Saree')">Order</button>
+    </div>
+
+    <div class="card">
+      <img src="C1.jpg">
+      <h4>Festive Saree</h4>
+      <p>₹1999</p>
+      <button onclick="orderNow('Festive Saree')">Order</button>
+    </div>
+
+    <div class="card">
+      <img src="images/saree4.jpg">
+      <h4>Designer Saree</h4>
+      <p>₹1299</p>
+      <button onclick="orderNow('Designer Saree')">Order</button>
+    </div>
+
   </div>
-
-  <div class="product">
-    <img src="C1.jpg">
-    <h4>Handloom Saree</h4>
-    <p class="price">₹1499</p>
-    <button onclick="orderNow('Handloom Saree')">Order</button>
-  </div>
-
-  <div class="product">
-    <img src="C1.jpg">
-    <h4>Festive Saree</h4>
-    <p class="price">₹1999</p>
-    <button onclick="orderNow('Festive Saree')">Order</button>
-  </div>
-
-  <div class="product">
-    <img src="C1.jpg">
-    <h4>Designer Saree</h4>
-    <p class="price">₹1299</p>
-    <button onclick="orderNow('Designer Saree')">Order</button>
-  </div>
-
 </section>
 
 <!-- SERVICES -->
-<section class="services">
-  <h3>👗 Blouse & Embroidery</h3>
-  <p>Custom stitching & embroidery available</p>
+<section id="services" class="services">
+  <h2>Blouse Designing & Embroidery</h2>
+  <ul>
+    <li>Designer Blouse Stitching</li>
+    <li>Machine & Hand Embroidery</li>
+    <li>Bridal Blouse Design</li>
+  </ul>
 </section>
 
 <!-- CONTACT -->
-<section class="contact">
-  <p>📞 8073319024 | Karnataka</p>
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>📞 8073319024</p>
+  <p>📍 Karnataka, India</p>
 </section>
 
-<!-- BOTTOM NAV -->
-<nav class="bottom-nav">
-  <a href="#">🏠<br>Home</a>
-  <a href="#">🛍️<br>Shop</a>
-  <a href="#">👗<br>Blouse</a>
-  <a href="#">📞<br>Contact</a>
-</nav>
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Annapoorna Sadi Center</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
