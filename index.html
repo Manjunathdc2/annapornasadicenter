@@ -1,113 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title><b>ANNAPORNA SADI CENTER</b></title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title><b>Annapoorna Saree Center</b></title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1><B>🛍️ ANNAPORNA SADI CENTER</B></h1>
-  <p>Elegant | Handloom | Comfortable</p>
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2 class="logo"><b>Annapoorna Sadi Center</b></h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<!-- NAV -->
-<nav>
-  <a href="#">Home</a>
-  <a href="#products">Sarees</a>
-  <a href="#services">Blouse</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<!-- SEARCH -->
-<section class="search-box">
-  <input type="text" id="search" placeholder="Search sarees..." onkeyup="searchProduct()">
-</section>
-
-<!-- FILTERS -->
-<section class="filters">
-  <select id="price" onchange="filterProducts()">
-    <option value="">Price</option>
-    <option value="low">Below ₹1000</option>
-    <option value="high">Above ₹1000</option>
-  </select>
-
-  <select id="color" onchange="filterProducts()">
-    <option value="">Color</option>
-    <option value="red">Red</option>
-    <option value="blue">Blue</option>
-    <option value="multi">Multi</option>
-  </select>
-
-  <select id="region" onchange="filterProducts()">
-    <option value="">Region</option>
-    <option value="mysore">Mysore</option>
-    <option value="ilkal">Ilkal</option>
-  </select>
-</section>
-
-<!-- PRODUCTS -->
-<section id="products" class="products">
-
-  <div class="product" data-price="low" data-color="red" data-region="mysore">
-    <img src="C1.jpg">
-    <h3>Daily Cotton Saree</h3>
-    <p>₹600</p>
-    <button onclick="orderNow('Daily Cotton Saree')">Order</button>
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Trust Us to</h1>
+    <h2>Uplift Your Sarees</h2>
+    <p>Premium Cotton & Handloom Collections</p>
+    <button onclick="scrollToShop()">Explore Now</button>
   </div>
 
-  <div class="product" data-price="high" data-color="blue" data-region="ilkal">
+  <div class="hero-img">
     <img src="C1.jpg">
-    <h3>Handloom Saree</h3>
-    <p>₹900</p>
-    <button onclick="orderNow('Handloom Saree')">Order</button>
   </div>
-
-  <div class="product" data-price="high" data-color="multi" data-region="mysore">
-    <img src="C1.jpg">
-    <h3>Festive Saree</h3>
-    <p>₹1200</p>
-    <button onclick="orderNow('Festive Saree')">Order</button>
-  </div>
-
 </section>
 
-<!-- GALLERY -->
-<section class="gallery">
-  <h2>Our Collection</h2>
-  <div class="gallery-container">
-    <img src="images/saree4.jpg">
-    <img src="images/saree5.jpg">
-    <img src="images/saree6.jpg">
+<!-- SHOP -->
+<section id="shop" class="shop">
+  <h2>Our Saree Collection</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="C1.jpg">
+      <h4>Cotton Saree</h4>
+      <p>₹899</p>
+      <button onclick="orderNow('Cotton Saree')">Order</button>
+    </div>
+
+    <div class="card">
+      <img src="C1.jpg">
+      <h4>Handloom Saree</h4>
+      <p>₹1499</p>
+      <button onclick="orderNow('Handloom Saree')">Order</button>
+    </div>
+
+    <div class="card">
+      <img src="C1.jpg">
+      <h4>Festive Saree</h4>
+      <p>₹1999</p>
+      <button onclick="orderNow('Festive Saree')">Order</button>
+    </div>
+
+    <div class="card">
+      <img src="C1.jpg">
+      <h4>Designer Saree</h4>
+      <p>₹1299</p>
+      <button onclick="orderNow('Designer Saree')">Order</button>
+    </div>
+
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="services">
-  <h2>👗 Blouse Designing & Embroidery</h2>
-  <ul>
-    <li>Designer Blouse Stitching</li>
-    <li>Hand & Machine Embroidery</li>
-    <li>Bridal Blouse Design</li>
-  </ul>
+  <h2>Our Services</h2>
+
+  <div class="service-box">
+
+    <div class="service">
+      <h3>👗 Blouse Designing</h3>
+      <p>Custom stitching with latest trends & perfect fitting</p>
+    </div>
+
+    <div class="service">
+      <h3>🧵 Embroidery Work</h3>
+      <p>Hand & machine embroidery for premium finishing</p>
+    </div>
+
+    <div class="service">
+      <h3>🎉 Bridal Wear</h3>
+      <p>Exclusive bridal blouse & saree customization</p>
+    </div>
+
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
-  <h2>📞 Contact Us</h2>
+  <h2>Contact Us</h2>
   <p>Danappa Chinchakhandi</p>
-  <p>📱 8073319024</p>
-  <p>📍 Rabakavi-Banahatti, Karnataka, India</p>
+  <p>📞 8073319024</p>
+  <p>📍 Karnataka, India</p>
 </section>
 
-<!-- NAV BOTTOM -->
-<nav class="bottom-nav">
-  <a href="#">🏠<br>Home</a>
-  <a href="#products">🛍️<br>Shop</a>
-  <a href="#services">👗<br>Blouse</a>
-  <a href="#contact">📞<br>Contact</a>
-</nav>
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Annapoorna Saree Center</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
